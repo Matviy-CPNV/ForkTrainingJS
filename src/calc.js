@@ -1,11 +1,13 @@
-function addition(a, b) {
-    let somme = a + b;
-    return somme;
+function addition(x,y) {
+    return x+y;
 }
 
-function multiplication(a, b) {
-    let produit = a * b;
-    return produit;
+function multiplication(x,y) {
+    return x*y;
+}
+
+function soustraction(x, y){
+    return x-y;
 }
 
 function main() {
@@ -13,7 +15,8 @@ function main() {
     let y = 10;
     let resultatAdd = addition(x, y);
     let resultatMult = multiplication(x, y);
-    console.log(`Addition: ${resultatAdd}, Multiplication: ${resultatMult}`);
+    let resultatSous = soustraction(x, y);
+    console.log(`Addition: ${resultatAdd}, Multiplication: ${resultatMult}, Soustraction: ${resultatSous}`);
 }
 
 main();
